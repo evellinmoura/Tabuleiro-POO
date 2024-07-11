@@ -17,15 +17,14 @@ public class JogadorAzarado extends Player {
         if (soma <= 6) {
             this.dadosAzarados = valoresDosDados;
         } else {
-            System.out.println("A soma dos valores dos dados deve ser menor ou igual a 6.");
-            this.dadosAzarados = new int[]{1, 1, 1}; // Inicializa com valores padrão válidos
+            this.dadosAzarados = new int[]{1, 1, 1};
         }
     }
 
 
     public void info() {
         super.info();
-        System.out.print("Dados Azarados: ");
+        System.out.print("Dados do jogador azarado: ");
         for (int i = 0; i < dadosAzarados.length; i++) {
             System.out.print(dadosAzarados[i] + " ");
         }

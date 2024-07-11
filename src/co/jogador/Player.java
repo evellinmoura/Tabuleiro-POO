@@ -27,7 +27,9 @@ public class Player {
 
     //metodo
     public void info() {
+        System.out.println("--------------------------------------------------------");
         System.out.println("Cor: " + this.cor);
         System.out.println("Posição: " + this.posicao);
+
     }
 }
