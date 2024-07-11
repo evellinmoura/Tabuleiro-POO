@@ -6,5 +6,6 @@ public class Main {
 
         jogador.setPosicao(2);
         jogador.info();
+        jogador.setPosicao(3);
     }
 }
