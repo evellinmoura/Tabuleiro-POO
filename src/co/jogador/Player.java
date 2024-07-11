@@ -6,10 +6,11 @@ public class Player {
     private int posicao;
 
     // construtor
-    public Player(String cor, String tipo) {
+    public Player(String cor) {
         this.cor = cor;
-        this.posicao = 0; // aqui eh inicializando a posicao com 0, pois todos os jogadores comecam na posicao 0
+        this.posicao = 0; // inicializando a posição como 0
     }
+
 
     public String getCor() {
         return this.cor;
@@ -19,11 +20,12 @@ public class Player {
         return this.posicao;
     }
 
+
     public void setPosicao(int posicao) {
         this.posicao = posicao;
     }
 
-    // metodo
+    //metodo
     public void info() {
         System.out.println("Cor: " + this.cor);
         System.out.println("Posição: " + this.posicao);
