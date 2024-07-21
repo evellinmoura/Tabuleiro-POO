@@ -1,35 +1,27 @@
 package co.jogador;
 
-public class Player {
-    // propriedades
-    private String cor;
-    private int posicao;
+public abstract class Player {
+    protected String nome;
+    protected String cor;
+    protected int posicao;
+    protected int jogadas;
 
-    // construtor
-    public Player(String cor) {
+    public Player(String nome, String cor) {
+        this.nome = nome;
         this.cor = cor;
-        this.posicao = 0; // inicializando a posição como 0
+        this.posicao = 0;
+        this.jogadas = 0;
     }
 
+    public abstract int rolarDados();
 
-    public String getCor() {
-        return this.cor;
+    public void mover(int casas) {
+        this.posicao += casas;
     }
 
-    public int getPosicao() {
-        return this.posicao;
-    }
-
-
-    public void setPosicao(int posicao) {
-        this.posicao = posicao;
-    }
-
-    //metodo
-    public void info() {
-        System.out.println("--------------------------------------------------------");
-        System.out.println("Cor: " + this.cor);
-        System.out.println("Posição: " + this.posicao);
-
-    }
+    public String getNome() { return nome; }
+    public String getCor() { return cor; }
+    public int getPosicao() { return posicao; }
+    public int getJogadas() { return jogadas; }
+    public void incrementarJogadas() { this.jogadas++; }
 }
