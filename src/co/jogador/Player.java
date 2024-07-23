@@ -19,9 +19,19 @@ public abstract class Player {
         this.posicao += casas;
     }
 
-    public String getNome() { return nome; }
-    public String getCor() { return cor; }
-    public int getPosicao() { return posicao; }
-    public int getJogadas() { return jogadas; }
-    public void incrementarJogadas() { this.jogadas++; }
+    public String getNome() { 
+        return nome;
+    }
+    public String getCor() {
+        return cor; 
+    }
+    public int getPosicao() { 
+        return posicao; 
+    }
+    public int getJogadas() {
+        return jogadas; 
+    }
+    public void incrementarJogadas() { 
+        this.jogadas++; 
+    }
 }
