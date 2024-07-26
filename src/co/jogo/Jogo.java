@@ -26,19 +26,26 @@ public class Jogo {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             for (Player jogador : jogadores) {
+                if (jogador.isPulaARodada()) {
+                    jogador.setPulaARodada(false);
+                    continue;
+                }
+
                 System.out.println("Vez de " + jogador.getNome() + " (" + jogador.getCor() + ")");
+                System.out.println("-----------------------------------------");
                 System.out.println("Pressione Enter para rolar os dados...");
+                System.out.println("----------------------------------------");
                 scanner.nextLine();
 
                 int movimento = jogador.rolarDados();
                 jogador.incrementarJogadas();
                 System.out.println("Resultado dos dados: " + movimento);
 
-                tabuleiro.moverJogador(jogador, movimento);
+                tabuleiro.moverJogador(jogador, jogadores, movimento);
                 tabuleiro.mostrarTabuleiro(jogadores);
 
                 if (jogador.getPosicao() >= 40) {
-                    System.out.println(jogador.getNome() + " venceu o jogo!");
+                    System.out.println(jogador.getNome() + " venceu o jogo! :)");
                     mostrarEstatisticas();
                     return;
                 }
