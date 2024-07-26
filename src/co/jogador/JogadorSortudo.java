@@ -11,6 +11,10 @@ public class JogadorSortudo extends Player {
     public int rolarDados() {
         Dados dados = new Dados();
         int resultado = dados.rolar();
-        return (resultado >= 7) ? resultado : 7;
+        if (resultado >= 6) {
+            return resultado;
+        } else {
+            return 7;
+        }
     }
 }
