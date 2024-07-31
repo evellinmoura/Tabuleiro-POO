@@ -1,5 +1,5 @@
                     
-Trabalho de POO
+Trabalho1 de POO
 
 Crie um jogo de computador que simule um jogo de tabuleiro. Seu jogo deve permitir
 até 6 participantes ao mesmo tempo. O tabuleiro tem 40 casas. Cada jogador possui uma
