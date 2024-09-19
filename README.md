@@ -43,3 +43,4 @@ indicando
 posição de cada um.
 - Você deve usar herança e polimorfismo no seu jogo
 
+Observação: Na branch Tabuleiro_Melhorias, consta a atualizações como personalizacao de jogadores, diferentes tipos de casa, maior quantidade de jogadores...
