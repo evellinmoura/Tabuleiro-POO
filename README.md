@@ -1,5 +1,6 @@
                     
-Trabalho1 de POO
+Tabuleiro-POO
+
 
 Crie um jogo de computador que simule um jogo de tabuleiro. Seu jogo deve permitir
 até 6 participantes ao mesmo tempo. O tabuleiro tem 40 casas. Cada jogador possui uma
@@ -43,7 +44,8 @@ indicando
 posição de cada um.
 - Você deve usar herança e polimorfismo no seu jogo
 _____________________________________________________________________________________________________________________________
-Na branch testecodigo, foram implementadas melhoras ao jogo:
+Na branch Tabuleiro_Melhorado, foram implementadas melhoras ao jogo:
+
 O jogo deve permitir até 6 participantes ao mesmo tempo. Cada jogador possui uma
 cor que o identifica, uma pontuação em moedas que ele recebe quando cai em uma casa
 Normal do tabuleiro. Cada movimento de um competidor é determinado por dois dados:
@@ -77,7 +79,9 @@ benefícios:
 casa simples (então passa a ganhar 4 moedas);
 - óculos escuro: ele tem que usar boné e moleton e ganha três moedas a mais sempre que
 cai em casa simples (então passa a ganhar 7 moedas);
+
 ------------------------------------------------------------------------------------------------------------------------------------
+
 Explicacoes sobre a utilizacao dos padroes de projeto:
 Factory: cria-se objetos sem expor a lógica de programação, e os objetos recém criados visualizam uma interface em comum.
 
